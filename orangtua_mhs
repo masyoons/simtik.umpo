@@ -1,0 +1,25 @@
+CREATE TABLE `orangtua_mhs` (
+  `iddata` int(255) NOT NULL AUTO_INCREMENT,
+  `kode_pmb` varchar(20) DEFAULT NULL,
+  `idmhs` int(30) DEFAULT NULL,
+  `nim_mhs` varchar(20) DEFAULT NULL,
+  `nama_ayah` varchar(150) DEFAULT NULL,
+  `tgl_lahir_ayah` varchar(30) DEFAULT NULL,
+  `pendidikan_ayah` varchar(100) DEFAULT NULL,
+  `pekerjaan_ayah` varchar(100) DEFAULT NULL,
+  `penghasilan_ayah` varchar(100) DEFAULT NULL,
+  `nama_ibu` varchar(50) DEFAULT NULL,
+  `tgl_lahir_ibu` varchar(20) DEFAULT NULL,
+  `pendidikan_ibu` varchar(100) DEFAULT NULL,
+  `pekerjaan_ibu` varchar(100) DEFAULT NULL,
+  `peghasilan_ibu` varchar(100) DEFAULT NULL,
+  `telepon_ortu` varchar(25) DEFAULT NULL,
+  `tgl_update` date DEFAULT NULL,
+  `tgl_input` date DEFAULT NULL,
+  `nama_mhs` varchar(100) DEFAULT NULL,
+  `nik_ayah` varchar(50) DEFAULT NULL,
+  `nik_ibu` varchar(50) DEFAULT NULL,
+  `do` int(10) DEFAULT '0',
+  PRIMARY KEY (`iddata`)
+) ENGINE=MyISAM AUTO_INCREMENT=21209 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+
