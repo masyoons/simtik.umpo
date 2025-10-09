@@ -1,0 +1,20 @@
+CREATE TABLE `kuliah_poin_mhs` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `kelas_aktif` varchar(200) DEFAULT NULL,
+  `id_thn` int(100) DEFAULT NULL,
+  `tahun` int(50) DEFAULT NULL,
+  `semester` varchar(10) DEFAULT NULL,
+  `id_dsn` int(10) DEFAULT NULL,
+  `kelas` varchar(100) DEFAULT NULL,
+  `nim` varchar(100) DEFAULT NULL,
+  `sesi` int(10) DEFAULT NULL,
+  `tanggal` date DEFAULT NULL,
+  `poin` int(10) DEFAULT NULL,
+  `catatan` text,
+  `updt` datetime DEFAULT NULL,
+  `stts` int(10) DEFAULT '0',
+  `kategori` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`) USING BTREE,
+  KEY `id_dsn` (`id_dsn`,`nim`) USING BTREE
+) ENGINE=MyISAM AUTO_INCREMENT=35865 DEFAULT CHARSET=latin1;
