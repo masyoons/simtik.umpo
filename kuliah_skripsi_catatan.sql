@@ -5,6 +5,7 @@ CREATE TABLE `kuliah_skripsi_catatan` (
   `id_dsn` int(100) NOT NULL,
   `sesi` int(20) NOT NULL,
   `tgl` date NOT NULL,
+  `url_file` varchar(100) DEFAULT NULL,
   `catatan` varchar(250) NOT NULL,
   `tgl_baca` datetime DEFAULT NULL,
   `catatan_mhs` varchar(200) DEFAULT NULL,
