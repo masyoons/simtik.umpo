@@ -1,0 +1,28 @@
+CREATE TABLE `jurusan` (
+  `id_jurusan` int(10) NOT NULL AUTO_INCREMENT,
+  `nama_jurusan` char(50) DEFAULT NULL,
+  `kls` varchar(20) DEFAULT NULL,
+  `kode_fakultas` char(13) DEFAULT NULL,
+  `kode_jurusan` char(12) DEFAULT NULL,
+  `kode_fakultas2` varchar(10) DEFAULT NULL,
+  `kode_jurusan2` varchar(10) DEFAULT NULL,
+  `kode_fp` varchar(10) DEFAULT NULL,
+  `kode_fp2` varchar(10) DEFAULT NULL,
+  `program_studi` varchar(100) DEFAULT NULL,
+  `perkelas` int(5) DEFAULT NULL,
+  `program_pendidikan` varchar(100) DEFAULT NULL,
+  `jenis` varchar(255) DEFAULT NULL,
+  `jenjang` varchar(10) DEFAULT NULL,
+  `reg_khus` varchar(255) DEFAULT NULL,
+  `jenis_esbed` varchar(5) DEFAULT NULL,
+  `jurusan_ijazah` varchar(100) DEFAULT NULL,
+  `nim_end` varchar(20) DEFAULT NULL,
+  `kode_esbed` varchar(10) DEFAULT NULL,
+  `kodefak_esbed` varchar(5) DEFAULT NULL,
+  `stt` varchar(5) DEFAULT NULL,
+  `stt_pmb` varchar(10) DEFAULT NULL,
+  `masa_studi` int(10) DEFAULT NULL,
+  `id_virtual` varchar(10) DEFAULT '1',
+  PRIMARY KEY (`id_jurusan`)
+) ENGINE=MyISAM AUTO_INCREMENT=47 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+
